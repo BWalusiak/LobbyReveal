@@ -32,5 +32,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: release
-        path: SimpleFeedReader/release/**
+        path: LobbyReveal/release/**
         if-no-files-found: error
