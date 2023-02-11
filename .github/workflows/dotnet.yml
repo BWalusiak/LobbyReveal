@@ -27,10 +27,10 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish src/LobbyReveal/LobbyReveal.csproj -c Release -o website -f net6.0
+      run: dotnet publish src/LobbyReveal/LobbyReveal.csproj -c Release -o release -f net6.0
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: website
+        name: release
         path: SimpleFeedReader/release/**
         if-no-files-found: error
