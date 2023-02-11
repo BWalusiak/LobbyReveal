@@ -34,3 +34,7 @@ jobs:
         name: release
         path: /home/runner/work/LobbyReveal/LobbyReveal/release/
         if-no-files-found: error
+    - name: Create Release
+  # You may pin to the exact commit or the version.
+  # uses: ncipollo/release-action@a2e71bdd4e7dab70ca26a852f29600c98b33153e
+      uses: ncipollo/release-action@v1.12.0
